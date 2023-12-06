@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/rahul-sandbox-389709/docker-image', '.']
+  args: ['build', '-t', '$_IMAGE_URL', '.']
 images:
-- 'gcr.io/rahul-sandbox-389709/docker-image'
+- '$_IMAGE_URL'
